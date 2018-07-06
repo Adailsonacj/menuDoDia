@@ -1,13 +1,10 @@
 package com.example.adailson.menudodia;
 
-import android.content.Context;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 
 public class Tab1 extends Fragment {
     /**
@@ -16,15 +13,15 @@ public class Tab1 extends Fragment {
      */
     private static final String ARG_SECTION_NUMBER = "section_number";
 
-    //public PlaceholderFragment() {
-    //}
+    public Tab1() {
+    }
 
     /**
      * Returns a new instance of this fragment for the given section
      * number.
      */
-    public static PlaceholderFragment newInstance(int sectionNumber) {
-        PlaceholderFragment fragment = new PlaceholderFragment();
+    public static Tab1 newInstance(int sectionNumber) {
+        Tab1 fragment = new Tab1();
         Bundle args = new Bundle();
         args.putInt(ARG_SECTION_NUMBER, sectionNumber);
         fragment.setArguments(args);
